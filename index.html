@@ -11,101 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        /* variables */
-
-        /* Colors */
-        --Red: hsl(0, 78%, 62%);
-        --Cyan: hsl(180, 62%, 55%);
-        --Orange: hsl(34, 97%, 64%);
-        --Blue: hsl(212, 86%, 64%);
-        --Very-Dark-Blue: hsl(234, 12%, 34%);
-        --Grayish-Blue: hsl(229, 6%, 66%);
-        --Very-Light-Gray: hsl(0, 0%, 98%);
-
-        /* Typography */
-        --fs-15: 15px;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        min-height: 100vh;
-        background-color: var(--Very-Light-Gray);
-        font-size: var(--fs-15);
-        font-family: "Poppins", sans-serif;
-        display: grid;
-        place-content: center;
-        margin: 4rem 0;
-      }
-      p {
-        color: var(--Grayish-Blue);
-      }
-
-      main {
-        /* border: 1px solid #000; */
-
-        max-width: 82%;
-      }
-      main,
-      main > p {
-        margin: 0 auto;
-      }
-      main h1,
-      main > p {
-        text-align: center;
-      }
-      main h1 {
-        color: var(--Very-Dark-Blue);
-        font-size: 1.5rem;
-        font-weight: 200;
-        margin-bottom: 1rem;
-      }
-      h1 span {
-        font-weight: 600;
-      }
-      main > p {
-        max-width: 320px;
-        margin-bottom: 4rem;
-      }
-      .card {
-        /* border: 1px solid blue; */
-
-        border-radius: 5px;
-        padding: 1.51rem;
-        box-shadow: 2px 2px 12px hsla(229, 6%, 66%, 0.9);
-        margin-bottom: 2rem;
-      }
-      .card h2 {
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-      }
-      .card p {
-        font-size: 0.85rem;
-        line-height: 1.7;
-        margin-bottom: 2rem;
-      }
-      .card img {
-        max-width: 55px;
-        display: block;
-        margin-left: auto;
-      }
-      .card.cyan {
-        border-top: 3px solid var(--Cyan);
-      }
-      .card.red {
-        border-top: 3px solid var(--Red);
-      }
-      .card.orange {
-        border-top: 3px solid var(--Orange);
-      }
-      .card.blue {
-        border-top: 3px solid var(--Blue);
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
@@ -114,27 +20,31 @@
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </p>
-      <div class="card cyan">
-        <h2>Supervisor</h2>
-        <p>Monitors activity to identify project roadblocks</p>
-        <img src="./images/icon-supervisor.svg" alt="" />
-      </div>
-      <div class="card red">
-        <h2>Team Builder</h2>
-        <p>
-          Scans our talent network to create the optimal team for your project
-        </p>
-        <img src="./images/icon-team-builder.svg" alt="" />
-      </div>
-      <div class="card orange">
-        <h2>Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <img src="./images/icon-karma.svg" alt="" />
-      </div>
-      <div class="card blue">
-        <h2>Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="./images/icon-calculator.svg" alt="" />
+      <div class="cards">
+        <div class="card cyan">
+          <h2>Supervisor</h2>
+          <p>Monitors activity to identify project roadblocks</p>
+          <img src="images/icon-supervisor.svg" alt="" />
+        </div>
+        <div class="card red">
+          <h2>Team Builder</h2>
+          <p>
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img src="images/icon-team-builder.svg" alt="" />
+        </div>
+        <div class="card orange">
+          <h2>Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img src="images/icon-karma.svg" alt="" />
+        </div>
+        <div class="card blue">
+          <h2>Calculator</h2>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img src="images/icon-calculator.svg" alt="" />
+        </div>
       </div>
     </main>
   </body>
